@@ -2,18 +2,15 @@ using UnityEngine;
 
 public class GravityChanger : MonoBehaviour
 {
-    public GameObject playerMove;
+    public Transform playerRotation;
+    public PlayerMovement playerMovement;
 
-    public Transform playerRotion;
-
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
- 
-    void Update()
-    {
-        Debug.Log(playerMove.GetComponent<PlayerMovement>().gravity);
+        if(other.tag == "Player")
+        {
+            playerRotation.rotation = Quaternion.Euler(0f, 0f, 180f);
+            playerMovement.gravity *= -1;
+        }
     }
 }
