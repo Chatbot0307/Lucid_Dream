@@ -3,11 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    public void ClickStart()
     {
-        if(other.tag == "Player")
-        {
-            SceneManager.LoadScene("Stage1");
-        }
+        SceneManager.LoadScene("Stage1");
     }
 }

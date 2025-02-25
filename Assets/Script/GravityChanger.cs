@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class GravityChanger : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class GravityChanger : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            playerRotation.rotation = Quaternion.Euler(0f, 0f, 180f);
+            playerRotation.rotation = 
             playerMovement.gravity *= -1;
         }
     }
