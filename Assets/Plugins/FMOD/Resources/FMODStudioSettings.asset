@@ -536,8 +536,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../FMOD Studio/Lucid_Dream/Lucid_Dream.fspro
-  sourceBankPath: ../../FMOD Studio/Lucid_Dream/Build
+  sourceProjectPath: Fmod/Lucid_Dream.fspro
+  sourceBankPath: Fmod/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -572,7 +572,7 @@ MonoBehaviour:
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
   CurrentVersion: 131623
-  HideSetupWizard: 0
+  HideSetupWizard: 1
   LastEventReferenceScanVersion: 131623
   Platforms:
   - {fileID: 3048135814869824325}

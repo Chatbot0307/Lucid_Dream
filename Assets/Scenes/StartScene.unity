@@ -129,9 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 84385026}
   - component: {fileID: 84385025}
-  - component: {fileID: 84385024}
   - component: {fileID: 84385028}
   - component: {fileID: 84385027}
+  - component: {fileID: 84385029}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -139,14 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &84385024
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84385023}
-  m_Enabled: 1
 --- !u!20 &84385025
 Camera:
   m_ObjectHideFlags: 0
@@ -274,6 +266,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &84385029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84385023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &99940311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1724,13 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 1, a: 0}
   PressColor: {r: 0, g: 0, b: 0, a: 0.83137256}
   normalColor: {r: 1, g: 1, b: 1, a: 0}
+  source:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

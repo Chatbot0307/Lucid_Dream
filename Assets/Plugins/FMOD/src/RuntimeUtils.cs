@@ -607,7 +607,6 @@ namespace FMODUnity
         {
             if (!Settings.IsInitialized() || Settings.Instance.LoggingLevel >= FMOD.DEBUG_FLAGS.ERROR)
             {
-                Debug.LogException(e);
             }
         }
 
