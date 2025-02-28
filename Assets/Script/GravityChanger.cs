@@ -8,10 +8,17 @@ public class GravityChanger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player" && playerMovement.isCeiling == false)
         {
-            playerRotation.rotation = 
+            playerRotation.transform.DORotate(new Vector3(0f, playerRotation.rotation.y, 180f), 0.5f).SetEase(Ease.InOutBack);
             playerMovement.gravity *= -1;
+            playerMovement.isCeiling = true;
+        }
+        else
+        {
+            playerRotation.transform.DORotate(new Vector3(playerRotation.rotation.x, playerRotation.rotation.y, 0f), 0.5f).SetEase(Ease.InOutBack);
+            playerMovement.gravity *= -1;
+            playerMovement.isCeiling = false;
         }
     }
 }
