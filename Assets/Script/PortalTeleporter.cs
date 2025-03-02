@@ -5,8 +5,6 @@ public class PortalTeleporter : MonoBehaviour
     public Transform player;
     public Transform reciever;
 
-    public PortalCount portalCount;
-
     private bool playerIsOverlapping = false;
 
     void FixedUpdate()
@@ -46,7 +44,6 @@ public class PortalTeleporter : MonoBehaviour
         {
             {
                 playerIsOverlapping = false;
-                portalCount.countPortal += 1;
             }
         }
     }
